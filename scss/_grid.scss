@@ -1,0 +1,6 @@
+#grilla{     /* grilla aplicada en la pagina de Contacto*/ 
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto;
+    grid-template-areas: "header" "main" "footer";
+}

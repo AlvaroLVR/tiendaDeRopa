@@ -1,0 +1,23 @@
+.mainIndex{
+    margin:0%;
+    grid-area: main; 
+    padding: 20px 0;
+}
+.descripcion h1{
+    text-align: center;
+}
+.formulario {
+    text-align: justify;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    ul{
+        li{
+            list-style: none;
+            align-items: center;
+        }
+    }  
+}
+.descripcion{
+    margin: auto;
+}

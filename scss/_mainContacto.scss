@@ -1,0 +1,48 @@
+/*MIXIN PARA LAS PROPIEDADES DE LAS CARTILLAS*/
+@mixin cartillaContancto{
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+    margin: 5px;
+    img{
+        width: 250px;
+        height: 250px;
+    }
+    h2{
+        a{
+            color: white;
+        }
+    }
+}
+/*LISTA ANIDADA*/
+$fondo: (purple instagram) (green whatsapp) (rgb(74, 74, 250) facebook);
+/*EACH PARA LOS FONDOS*/
+@each  $color, $name  in $fondo {
+    .#{ $name }{
+        background-color: $color;
+        @include cartillaContancto;
+    } 
+}
+
+.maps{
+    height: 300px;
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+    .mapsContacto{
+        padding: 5px;
+        text-align: center;
+        ul {
+            li{
+                list-style: none;     
+            }
+        }
+    }
+    iframe{
+        width: 600px;
+        height: 300px;
+        padding: 5px;
+    }
+}
+

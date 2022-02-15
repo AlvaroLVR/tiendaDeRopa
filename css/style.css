@@ -1,0 +1,376 @@
+*{
+    font-family: 'Montserrat', sans-serif; 
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+/*HEADER */
+header{
+    width: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    grid-area: header;
+    background-image: linear-gradient(to top, white,rgb(160, 160, 160) );
+}
+.imgLogo{
+    height: 75px;
+    width: 150px; 
+    padding: 8px;
+    border-radius:12px ;
+}
+.navegacion{
+    display: inline;
+    margin: 30px;
+}
+header div ul{
+    display: inline-block;
+}
+.headerMain div ul li{
+    list-style: none;
+    display: inline;
+    padding: 0 40px; 
+
+}
+.menuHeader li:hover{
+    background: #fff8dc;
+    border-radius: 8px;
+}
+.menuDesplegable {
+    position: absolute;
+    left: 650px;
+    display: none;
+}
+.menuDesplegable li a{
+    display: flex;
+    flex-flow: column wrap;
+}
+.menuHeader li:hover .menuDesplegable {
+    display:block;
+}
+.envios ul{
+    list-style: none;
+}
+
+.miniMenu{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: red;
+    display: none;
+}
+
+
+/*MAIN*/
+main{
+    background-color:white;
+    margin:0%;
+    grid-area: main;
+}
+main div span img{
+    height: 225px;
+    width: 225px;
+}
+main table tr td span {
+    text-align: center;
+}
+
+.descripcion h1{
+    text-align: center;
+}
+table{
+    margin: auto;
+    
+}
+table tr{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+table tbody{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.formulario {
+    text-align: justify;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+}
+form ul li{
+    list-style: none;
+    align-items: center;
+}
+.instagram{
+    background-color: purple;
+    padding: 3rem;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+    margin: 5px;
+}
+.whatsapp{
+    background-color: rgb(3, 226, 3);
+    padding: 3rem;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+    margin: 5px;
+}
+.facebook{
+    background-color: rgb(48, 92, 236);
+    padding: 3rem;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+    margin: 5px;
+}
+.instagram h2 a{
+    color: white;
+}
+.facebook h2 a{
+    color: white;
+}
+.whatsapp h2 a{
+    color: white;
+}
+#instagram{
+    grid-area: instagram;
+}
+#facebook{
+    grid-area: facebook;
+}
+#whastapp{
+    grid-area: whatsapp;
+}
+#maps{
+    grid-area: maps;
+}
+#formulario{
+    grid-area: formulario;
+}
+.maps{
+    height: 300px;
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+}
+.mapsContacto{
+    padding: 5px;
+    text-align: center;
+}
+.mapsContacto ul li{
+    list-style: none;     
+}
+.maps iframe{
+    width: 600px;
+    height: 300px;
+    padding: 5px;
+}
+.descripcion{
+    margin: auto;
+}
+
+
+
+/* Foro */
+#foro{
+    display: flex;
+}
+.grillaForo{
+    display: grid;
+    grid-template-areas:"envios pagos"
+                        "exp exp" ;
+    grid-template-rows: 50vh 50vh ;
+    grid-template-columns: 50vw 50vw;
+}
+
+.envios{
+    margin: auto; 
+    padding: 10px;
+    grid-area: envios;
+    text-align: center;
+    border-radius: 8px;
+    height: 200px;
+    width: 400px;
+    box-shadow: -10px 10px 10px grey;
+    background: rgb(192,192,192);
+    background: linear-gradient(0deg, rgba(192,192,192,1) 37%, rgba(128,128,128,1) 100%);
+}  
+.metodosdepago{
+    margin: auto;
+    padding: 10px;
+    grid-area: pagos;
+    text-align: center;
+    border-radius: 8px;
+    height: 200px;
+    width: 400px;
+    box-shadow: -10px 10px 10px grey;
+    background: rgb(192,192,192);
+    background: linear-gradient(0deg, rgba(192,192,192,1) 37%, rgba(128,128,128,1) 100%);
+}
+.metodosdepago ul li{
+    list-style: none;
+}
+.experiencias{
+    grid-area: exp;
+    text-align: center;
+}
+/* Marca */
+
+.imginstagram{
+    height: 200px;
+    width: 200px;
+}
+.imgWhatsapp{
+    height: 200px;
+    width: 200px;
+}
+.imgFacebook{
+    height: 200px;
+    width: 200px;
+}
+.carrusel{
+    background-color: rgb(209, 209, 209);
+    height: 350px;
+    width: auto;
+    border-radius: 8px;
+    margin: .5rem;
+    animation-name: carrusel;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.foro div ul li{
+    list-style: none;
+}
+
+#grilla{     /* grilla aplicada en la pagina de Contacto*/ 
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto;
+    grid-template-areas: "header" "main" "footer";
+}
+.productos {
+    margin-top: 40px;
+}
+
+/*FOOTER*/
+footer{
+    background-image: linear-gradient(to bottom, white,rgb(160, 160, 160) );
+    width: auto;
+    bottom: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    grid-area: footer;
+}
+.redes{
+    padding: 30px;
+}
+.visitas{ 
+    padding: 30px;
+}
+footer div a{
+    padding: 15px;
+}
+a{  /*todas las etiquetas a del sitio */
+    text-decoration: none;
+}
+
+@media   (max-width: 400px) {
+
+    .navegacion {
+    display: none;
+    }
+    .miniMenu{
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        background-color: red;
+        display: inline;
+        margin: 20px;
+    }
+    .miniMenu ul li{
+        list-style: none;
+    }
+    header{
+        flex-flow: row;
+        justify-content: space-between;
+    }
+    .footer{
+        display: flex;
+        flex-flow: column wrap;
+    }
+    .redes {
+        padding: 30px;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+    }
+
+    .instagram{
+        text-align: center;
+        align-items: center;
+    }
+    .facebook{
+        text-align: center;
+        align-items: center;
+    }
+    .whatsapp{
+        text-align: center;
+        align-items: center;
+    }
+    #marca{
+        height: auto;
+        text-align: center;
+    }
+    .grillaForo{
+        display: grid;
+        grid-template-areas:"envios" "pagos"
+                            "exp" ;
+        grid-template-rows: 50vh 50vh 50vh 50vh;
+        grid-template-columns: 100vw;
+        margin-top: 30px;
+    }
+    .envios{
+        margin: auto; 
+        
+        grid-area: envios;
+        text-align: center;
+        border-radius: 8px;
+        height: auto;
+        width: auto;
+        margin: 18px;
+        box-shadow: -10px 10px 10px grey;
+        background: rgb(192,192,192);
+        background: linear-gradient(0deg, rgba(192,192,192,1) 37%, rgba(128,128,128,1) 100%);
+        align-self: center;
+    }  
+    .metodosdepago{
+        margin: auto;
+        
+        grid-area: pagos;
+        text-align: center;
+        border-radius: 8px;
+        height: auto;
+        width: auto;
+        margin: 18px;
+        box-shadow: -10px 10px 10px grey;
+        background: rgb(192,192,192);
+        background: linear-gradient(0deg, rgba(192,192,192,1) 37%, rgba(128,128,128,1) 100%);
+        align-self: center;
+
+    }
+}
+
+@keyframes carrusel {    
+    0%{width: 0vw;}
+
+    100%{width: 97vw;}
+}
+
+/* Responsive mobile */
+

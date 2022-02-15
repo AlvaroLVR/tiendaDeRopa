@@ -1,0 +1,88 @@
+@media   (max-width: 425px) {
+
+    .navegacion {
+    display: none;
+    }
+    .miniMenu{
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        background-color: red;
+        display: inline;
+        margin: 20px;
+    }
+    .miniMenu ul li{
+        list-style: none;
+    }
+    header{
+        flex-flow: row;
+        justify-content: space-between;
+    }
+    .footer{
+        display: flex;
+        flex-flow: column wrap;
+        height: auto;
+    }
+    .redes {
+        padding: 30px;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+    }
+    @mixin tamañoCartilla {
+        text-align: center;
+        align-items: center;
+        img{
+            height: 100px;
+            width: 100px;
+        }
+    }
+    .instagram{
+        @include tamañoCartilla;
+    }
+    .facebook{
+        @include tamañoCartilla;
+
+    }
+    .whatsapp{
+        @include tamañoCartilla;
+    }
+    
+    .maps{
+        iframe{
+            height: 200px;
+            width: 200px;
+        }
+    }
+    #marca{
+        height: auto;
+        text-align: center;
+    }
+    .grillaForo{
+        display: grid;
+        grid-template-areas:"envios" "pagos"
+                            "exp" ;
+        grid-template-rows: 50vh 50vh 50vh 50vh;
+        grid-template-columns: 100vw;
+        margin-top: 30px;
+    }
+    @mixin fondoGrad {
+        margin: auto;   
+        grid-area: envios;
+        text-align: center;
+        border-radius: 8px;
+        height: auto;
+        width: auto;
+        margin: 18px;
+        box-shadow: -10px 10px 10px grey;
+        background: rgb(192,192,192);
+        background: linear-gradient(0deg, rgba(192,192,192,1) 37%, rgba(128,128,128,1) 100%);
+        align-self: center;
+    }
+    .envios{
+        @include fondoGrad;
+    }  
+    .metodosdepago{
+        @include fondoGrad;
+    }
+}

@@ -1,0 +1,48 @@
+#foro{
+    display: flex;
+}
+.grillaForo{
+    display: grid;
+    grid-template-areas:"envios pagos"
+                        "exp exp" ;
+    grid-template-rows: 50vh 50vh ;
+    grid-template-columns: 50vw 50vw;
+}
+@mixin name {
+    margin: auto; 
+    padding: 10px;
+    grid-area: envios;
+    text-align: center;
+    border-radius: 8px;
+    height: auto;
+    width: 400px;
+    box-shadow: -10px 10px 10px grey;
+    background: rgb(192,192,192);
+    background: linear-gradient(0deg, rgba(192,192,192,1) 37%, rgba(128,128,128,1) 100%);
+}
+.envios{
+    @include name;
+}  
+.metodosdepago{
+    @include name;
+    ul {
+        li{
+            list-style: none;
+        }
+    }
+}
+.experiencias{
+    grid-area: exp;
+    text-align: left;
+    margin-top: 40px;
+    h2{
+        text-align: left;
+    }
+}
+.mainForo{
+    margin: 40px 0 20px 0;
+    h1{
+        text-align: center;
+    }
+}
+

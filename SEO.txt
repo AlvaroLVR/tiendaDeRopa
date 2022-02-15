@@ -1,0 +1,20 @@
+Keywords: importados, calidad, estilo. 
+-elegí importados por que planeo trabajar con ropa importada, las personas suelen buscar
+lugares donde comprarla y quiero ofrecerlo. 
+-calidad por que es llamativo y es una de las cualidades que se busca a la hora de comprar
+ademas busco vender ropa diseñada y de calidad. 
+-estilo, apunto a un público joven donde la vestimenta informal es demandada, el estilo es una 
+cualidad que quiero relacionar a mi marca asi que si alguien esta en busca de eso quiero
+que aparezca mi marca. 
+--------------------------------------------------
+Description: 
+En AIVA encontra el estilo que queres, con el mejor precio y calidad del mercado. 
+lleva tu Actitud y presencia a todos lados. DEJA TU MARCA
+--------------------------------------------------
+Encabezados: "AIVA | DEJA TU MARCA"
+a mi encabezado del index le agregue una especie de "slogan". se ve complementado en la pagina
+del sitio "Marca" donde agregue una descripción breve sobre la marca y agrego el slogan. 
+ademas, detalle mas estetico, agregue '| "nombre de la pagina" ' a todas la páginas del 
+sitio. 
+uso de por lo menos 1 <h1> en cada parte del sitio.   
+--------------------------------------------------

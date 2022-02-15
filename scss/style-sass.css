@@ -1,0 +1,503 @@
+.footer {
+  background: silver;
+  background: -webkit-gradient(linear, left bottom, left top, from(silver), to(white));
+  background: linear-gradient(0deg, silver 0%, white 100%);
+  height: 150px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: footer;
+}
+
+.footer__visits--pleft {
+  text-decoration: none;
+}
+
+.footer div a {
+  text-decoration: none;
+  padding: 15px;
+}
+
+.mainIndex {
+  margin: 0%;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: main;
+  padding: 20px 0;
+}
+
+.descripcion h1 {
+  text-align: center;
+}
+
+.formulario {
+  text-align: justify;
+  padding: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.formulario ul li {
+  list-style: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.descripcion {
+  margin: auto;
+}
+
+#grilla {
+  /* grilla aplicada en la pagina de Contacto*/
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto auto auto;
+      grid-template-rows: auto auto auto;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+      grid-template-areas: "header" "main" "footer";
+}
+
+/*MIXIN PARA LAS PROPIEDADES DE LAS CARTILLAS*/
+/*LISTA ANIDADA*/
+/*EACH PARA LOS FONDOS*/
+.instagram {
+  background-color: purple;
+  padding: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 8px;
+  margin: 5px;
+}
+
+.instagram img {
+  width: 250px;
+  height: 250px;
+}
+
+.instagram h2 a {
+  color: white;
+}
+
+.whatsapp {
+  background-color: green;
+  padding: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 8px;
+  margin: 5px;
+}
+
+.whatsapp img {
+  width: 250px;
+  height: 250px;
+}
+
+.whatsapp h2 a {
+  color: white;
+}
+
+.facebook {
+  background-color: #4a4afa;
+  padding: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 8px;
+  margin: 5px;
+}
+
+.facebook img {
+  width: 250px;
+  height: 250px;
+}
+
+.facebook h2 a {
+  color: white;
+}
+
+.maps {
+  height: 300px;
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.maps .mapsContacto {
+  padding: 5px;
+  text-align: center;
+}
+
+.maps .mapsContacto ul li {
+  list-style: none;
+}
+
+.maps iframe {
+  width: 600px;
+  height: 300px;
+  padding: 5px;
+}
+
+#foro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.grillaForo {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "envios pagos" "exp exp";
+  -ms-grid-rows: 50vh 50vh;
+      grid-template-rows: 50vh 50vh;
+  -ms-grid-columns: 50vw 50vw;
+      grid-template-columns: 50vw 50vw;
+}
+
+.envios {
+  margin: auto;
+  padding: 10px;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: envios;
+  text-align: center;
+  border-radius: 8px;
+  height: auto;
+  width: 400px;
+  -webkit-box-shadow: -10px 10px 10px grey;
+          box-shadow: -10px 10px 10px grey;
+  background: silver;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(37%, silver), to(gray));
+  background: linear-gradient(0deg, silver 37%, gray 100%);
+}
+
+.metodosdepago {
+  margin: auto;
+  padding: 10px;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: envios;
+  text-align: center;
+  border-radius: 8px;
+  height: auto;
+  width: 400px;
+  -webkit-box-shadow: -10px 10px 10px grey;
+          box-shadow: -10px 10px 10px grey;
+  background: silver;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(37%, silver), to(gray));
+  background: linear-gradient(0deg, silver 37%, gray 100%);
+}
+
+.metodosdepago ul li {
+  list-style: none;
+}
+
+.experiencias {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: exp;
+  text-align: left;
+  margin-top: 40px;
+}
+
+.experiencias h2 {
+  text-align: left;
+}
+
+.mainForo {
+  margin: 40px 0 20px 0;
+}
+
+.mainForo h1 {
+  text-align: center;
+}
+
+* {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0%;
+  padding: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #dddddd;
+  background: -webkit-gradient(linear, left top, right top, from(#dddddd), color-stop(50%, white), to(#dddddd));
+  background: linear-gradient(90deg, #dddddd 0%, white 50%, #dddddd 100%);
+}
+
+@media (max-width: 425px) {
+  .navegacion {
+    display: none;
+  }
+  .miniMenu {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: red;
+    display: inline;
+    margin: 20px;
+  }
+  .miniMenu ul li {
+    list-style: none;
+  }
+  header {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    height: auto;
+  }
+  .redes {
+    padding: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .instagram {
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .instagram img {
+    height: 100px;
+    width: 100px;
+  }
+  .facebook {
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .facebook img {
+    height: 100px;
+    width: 100px;
+  }
+  .whatsapp {
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .whatsapp img {
+    height: 100px;
+    width: 100px;
+  }
+  .maps iframe {
+    height: 200px;
+    width: 200px;
+  }
+  #marca {
+    height: auto;
+    text-align: center;
+  }
+  .grillaForo {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "envios" "pagos" "exp";
+    -ms-grid-rows: 50vh 50vh 50vh 50vh;
+        grid-template-rows: 50vh 50vh 50vh 50vh;
+    -ms-grid-columns: 100vw;
+        grid-template-columns: 100vw;
+    margin-top: 30px;
+  }
+  .envios {
+    margin: auto;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: envios;
+    text-align: center;
+    border-radius: 8px;
+    height: auto;
+    width: auto;
+    margin: 18px;
+    -webkit-box-shadow: -10px 10px 10px grey;
+            box-shadow: -10px 10px 10px grey;
+    background: silver;
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(37%, silver), to(gray));
+    background: linear-gradient(0deg, silver 37%, gray 100%);
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .metodosdepago {
+    margin: auto;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: envios;
+    text-align: center;
+    border-radius: 8px;
+    height: auto;
+    width: auto;
+    margin: 18px;
+    -webkit-box-shadow: -10px 10px 10px grey;
+            box-shadow: -10px 10px 10px grey;
+    background: silver;
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(37%, silver), to(gray));
+    background: linear-gradient(0deg, silver 37%, gray 100%);
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
+.descripcionMarca {
+  margin-top: 20px;
+  height: 200px;
+}
+
+.descripcionMarca h1 {
+  text-align: center;
+}
+
+.coleccionSignos {
+  background-color: black;
+  height: 150px;
+  width: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.coleccionHeartbreaker {
+  background-color: rgba(255, 0, 0, 0.877);
+  height: 150px;
+  width: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.coleccionElementos {
+  background-color: rgba(123, 203, 250, 0.788);
+  height: 150px;
+  width: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.coleccionFuego {
+  background-color: rgba(255, 72, 0, 0.911);
+  height: 150px;
+  width: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.mainCuenta {
+  height: 450px;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.datosRopa {
+  height: 400px;
+  width: 50vw;
+  position: relative;
+  right: 0px;
+  border-left: 1px rgba(128, 128, 128, 0.623) solid;
+  text-align: left;
+  padding-top: 40px;
+}
+
+.datosRopa ul li {
+  list-style: none;
+  padding-bottom: 20px;
+}
+
+.datosRopa h2 {
+  text-align: center;
+}
+
+.catalogoCuenta {
+  height: auto;
+  width: 50vw;
+}
+
+.mainMarket {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.descripcionProducto {
+  /*display: none cuando se vea en dispositivos sm agregar mediaquerie*/
+  height: auto;
+  width: 20vw;
+  background: #e9e9e9;
+}
+
+.descripcionProducto h2 {
+  margin-top: 5px;
+  text-align: center;
+  border: 1px rgba(128, 128, 128, 0.671) solid;
+  border-radius: 8px;
+  background-color: rgba(255, 217, 0, 0.726);
+}
+
+.descripcionProducto ul li {
+  list-style: square;
+  text-align: left;
+  padding-bottom: 10px;
+}
+
+.catalogo {
+  height: auto;
+  width: 80vw;
+  margin: 30px 0 0 10px;
+}
+/*# sourceMappingURL=style-sass.css.map */

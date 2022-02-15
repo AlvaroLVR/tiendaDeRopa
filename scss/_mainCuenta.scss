@@ -1,0 +1,27 @@
+.mainCuenta{
+    height: 450px;
+    width: 100vw;
+    display: flex;
+}
+.datosRopa{
+    height: 400px;
+    width: 50vw;
+    position: relative;
+    right: 0px;
+    border-left: 1px rgba(128, 128, 128, 0.623) solid;
+    text-align: left;
+    padding-top: 40px;
+    ul{
+        li{
+            list-style: none;
+            padding-bottom: 20px;
+        }
+    }
+    h2{
+        text-align: center;
+    }
+}
+.catalogoCuenta{
+    height: auto;
+    width: 50vw;
+}
