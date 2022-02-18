@@ -66,6 +66,13 @@
   margin: auto;
 }
 
+.whatsappIcon {
+  display: block;
+  position: fixed;
+  bottom: 50px;
+  left: 90vw;
+}
+
 #grilla {
   /* grilla aplicada en la pagina de Contacto*/
   display: -ms-grid;
