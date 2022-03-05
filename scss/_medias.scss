@@ -1,5 +1,4 @@
 @media   (max-width: 425px) {
-
     .navegacion {
     display: none;
     }
@@ -47,13 +46,6 @@
     .whatsapp{
         @include tamañoCartilla;
     }
-    
-    .maps{
-        iframe{
-            height: 200px;
-            width: 200px;
-        }
-    }
     #marca{
         height: auto;
         text-align: center;
@@ -85,4 +77,78 @@
     .metodosdepago{
         @include fondoGrad;
     }
+    .whatsappIcon{
+        display: block;
+        position: fixed;
+        bottom: 30px; left: 80vw; 
+    }
+    .barraBuscadora{
+        display: none;
+    }
+    .barraNormal{
+        display: none;
+    }
+    .barraCelu{
+        display: inline;
+    }
+    .logoMenu{
+        height: 30px;
+        width: 120px;
+    }
+    .parrafoNew{
+        display: none;
+        img{
+            display: none;
+        }
+    }
+    .maps{
+        display: flex;
+        flex-direction: column;
+        .mapsContacto{
+            margin: auto;
+            img{
+                display: none;
+            }
+        }
+        iframe{
+            height: 150px;
+            width: auto;
+        }
+    }
+
+    .formulario{
+        display: flex;
+        flex-direction: column;
+        .tituloMobi{
+            display: inline;
+            justify-content: center;
+            margin: 20px auto;
+            text-align: center;
+        }
+        .form{
+            display: inline;
+        }
+    }
+
+    .descripcionProducto{
+        display: none;
+    }
+
+    .mainCuenta{
+        display: flex;
+        flex-flow: column wrap;
+        .catalogoCuenta{
+            height: auto;
+            width: 90vw;
+        }  
+        .datosRopa{
+            height: 300px;
+            width: 90vw;
+            border: 0;
+            position: relative;
+            left: -10px;
+            align-items:center;
+            padding-top: 40px;
+        }
+    } 
 }

@@ -6,18 +6,6 @@
 .descripcion h1{
     text-align: center;
 }
-.formulario {
-    text-align: justify;
-    padding: 25px;
-    display: flex;
-    justify-content: center;
-    ul{
-        li{
-            list-style: none;
-            align-items: center;
-        }
-    }  
-}
 .descripcion{
     margin: auto;
 }
@@ -25,4 +13,20 @@
     display: block;
     position: fixed;
     bottom: 50px; left: 90vw; 
+}
+.btn-primary{
+    color: #212529;
+    background-color: #fbc20794;
+    border: none;
+    
+}
+.btn-primary:hover{
+    background-color: #fbc20794;
+}
+.barraCelu{
+    display: none;
+}
+.logoMenu{
+    width: 200px;
+    height: 50px;
 }

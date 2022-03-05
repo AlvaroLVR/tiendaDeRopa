@@ -5,13 +5,43 @@
         text-align: center;
     }
 }
-$fondoM: (black coleccionSignos) (rgba(255, 0, 0, 0.877) coleccionHeartbreaker) (rgba(123, 203, 250, 0.788) coleccionElementos) (rgba(255, 72, 0, 0.911) coleccionFuego);
+
+$fondoC: (url("../img/fondoMarcaElementos.jpg") coleccionElementos) (url("../img/fondoMarcaFuego.jpg") coleccionFuego) (url("../img/fondoMarcaHearbreaker.jpg") coleccionHeartbreaker) (url("../img/fondoMarcaSignos.png") coleccionSignos);
+
+@each $fondo, $class in $fondoC {
+    .#{$class}{
+        background-image: $fondo;
+        /* background-attachment: fixed;  scroll | fixed | inherit */
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+
+$fondoM: (#a98351 coleccionSignos) (white coleccionHeartbreaker) (#5ce1e6 coleccionElementos) (black coleccionFuego);
 @each $color, $clase in $fondoM {
     .#{$clase}{
         background-color: $color;
-        height: 150px;
+        height: 300px;
         width: auto;
         border-radius: 8px;
         margin-bottom: 10px;
+        align-items: center;
+        color: white;
+        display: flex;
+        font-size: large;
     }   
+}
+.coleccionSignos{
+    justify-content: flex-end;
+    
+}
+.coleccionHeartbreaker{
+    background-position-x: right;
+    color:black;
+}
+.coleccionElementos{
+    justify-content: flex-end;
+}
+.coleccionFuego{
+    background-position-x: right;
 }

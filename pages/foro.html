@@ -22,52 +22,89 @@
 <body>
     <div class="container-fluid">
         <div class="row"> <!--containerHeader-->
-            <!-- 
-                 <header class="headerMain" >
-                <div class="miniMenu">            
-                    <ul><li>A</li></ul>
-                </div>
-                <img src="../img/logoMenu.png" alt="logo" class="imgLogo">
-                <div class="navegacion">
-                    <ul class="menuHeader">
-                        <li> <a href="../index.html">Inicio</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
-                        <li><a href="marca.html">Marca</a>
-                            <ul class="menuDesplegable">
-                                <li><a href="#">Quienes somos</a></li>
-                                <li><a href="#">FAQ</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="foro.html">Foro</a></li>
-                    </ul>
-                </div>
-            </header>
-
-            -->       
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-              <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html"><img src="../img/logoMenu.svg" alt="logo" width="200" height="50"></a>
+          <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+              <div class="container-fluid position-relative">
+                <a class="navbar-brand" href="../index.html"><img src="../img/logoMenu.svg" alt="logo" width="200" height="50" class="logoMenu"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                  <ul class="navbar-nav">
+                <div class="collapse navbar-collapse position-absolute end-0 " id="navbarNavDropdown">
+                  <ul class="navbar-nav barraNormal">
                     <li class="nav-item">
                       <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                      <a class="nav-link" href="contacto.html">Contacto</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="../pages/foro.html">Foro</a>
+                      <a class="nav-link" href="marca.html">Marca</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../pages/marca.html">Marca</a>
-                      </li>
+                      <a class="nav-link" href="foro.html">Foro</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="cuenta.html"><img src="../img/iconoUsuario.svg" alt="usuario" height="25px" width="25px"></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"><img src="../img/iconoCarrito.svg" alt="carrito" height="25px" width="25px"></a>
+                    </li>
                   </ul>
                 </div>
+
+                <div class="collapse navbar-collapse " id="navbarNavDropdown">
+                  <ul class="navbar-nav barraCelu">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="marca.html">Marca</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="foro.html">Foro</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="cuenta.html"><img src="../img/iconoUsuario.svg" alt="usuario" height="25px" width="25px"></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"><img src="../img/iconoCarrito.svg" alt="carrito" height="25px" width="25px"></a>
+                    </li>
+                  </ul>
+                </div>
+
+                <nav class="navbar navbar-light bg-light position-absolute top-0 start-50 translate-middle-x barraBuscadora"> <!--BUSCADOR-->
+                  <div class="container-fluid">
+                    <form class="d-flex">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                  </div>
+                </nav>   
               </div>
-            </nav>
+          </nav>
+            <!-- 
+                <header class="headerMain" id="header">
+              <div class="miniMenu">            
+                  <ul><li>A</li></ul>
+              </div>
+              <img src="../img/logoMenu.png" alt="logo" class="imgLogo">   
+              <div class="navegacion">
+                  <ul class="menuHeader">
+                      <li> <a href="../index.html">Inicio</a></li>
+                      <li><a href="contacto.html">Contacto</a></li>
+                      <li><a href="marca.html" >Marca</a>
+                          <ul class="menuDesplegable">
+                              <li><a href="#">Quienes somos</a></li>
+                              <li><a href="#">FAQ</a></li>
+                          </ul>
+                      </li>
+                      <li><a href="foro.html">Foro</a></li>
+                  </ul>
+              </div>
+          </header>
+            -->  
         </div>
         <div class="row"> <!--mainContainer-->
                 <div class="container-fluid  mainForo">

@@ -44,24 +44,6 @@
   text-align: center;
 }
 
-.formulario {
-  text-align: justify;
-  padding: 25px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.formulario ul li {
-  list-style: none;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .descripcion {
   margin: auto;
 }
@@ -71,6 +53,25 @@
   position: fixed;
   bottom: 50px;
   left: 90vw;
+}
+
+.btn-primary {
+  color: #212529;
+  background-color: #fbc20794;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #fbc20794;
+}
+
+.barraCelu {
+  display: none;
+}
+
+.logoMenu {
+  width: 200px;
+  height: 50px;
 }
 
 #grilla {
@@ -88,7 +89,7 @@
 /*LISTA ANIDADA*/
 /*EACH PARA LOS FONDOS*/
 .instagram {
-  background-color: purple;
+  background-color: rgba(128, 0, 128, 0.8);
   padding: 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -98,6 +99,9 @@
           justify-content: space-between;
   border-radius: 8px;
   margin: 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .instagram img {
@@ -110,7 +114,7 @@
 }
 
 .whatsapp {
-  background-color: green;
+  background-color: #29a71a;
   padding: 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -120,6 +124,9 @@
           justify-content: space-between;
   border-radius: 8px;
   margin: 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .whatsapp img {
@@ -132,7 +139,7 @@
 }
 
 .facebook {
-  background-color: #4a4afa;
+  background-color: #3885d5;
   padding: 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -142,6 +149,9 @@
           justify-content: space-between;
   border-radius: 8px;
   margin: 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .facebook img {
@@ -156,6 +166,7 @@
 .maps {
   height: 300px;
   width: auto;
+  margin: 30px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -176,6 +187,79 @@
   width: 600px;
   height: 300px;
   padding: 5px;
+}
+
+.formulario {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  position: relative;
+  margin: 10px 10px 15px 10px;
+  border: solid 1px rgba(128, 128, 128, 0.514);
+  border-radius: 8px;
+  -webkit-box-shadow: -15px 13px 15px rgba(0, 0, 0, 0.6);
+          box-shadow: -15px 13px 15px rgba(0, 0, 0, 0.6);
+}
+
+.formulario .parrafoNew {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 20px 0 10px 20px;
+}
+
+.formulario .parrafoNew img {
+  position: relative;
+  left: -45px;
+}
+
+.formulario .tituloMobi {
+  display: none;
+}
+
+.formulario form {
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.formulario form div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.formulario ul li {
+  list-style: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #foro {
@@ -267,6 +351,204 @@ body {
   background: linear-gradient(90deg, #dddddd 0%, white 50%, #dddddd 100%);
 }
 
+.descripcionMarca {
+  margin-top: 20px;
+  height: 200px;
+}
+
+.descripcionMarca h1 {
+  text-align: center;
+}
+
+.coleccionElementos {
+  background-image: url("../img/fondoMarcaElementos.jpg");
+  /* background-attachment: fixed;  scroll | fixed | inherit */
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.coleccionFuego {
+  background-image: url("../img/fondoMarcaFuego.jpg");
+  /* background-attachment: fixed;  scroll | fixed | inherit */
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.coleccionHeartbreaker {
+  background-image: url("../img/fondoMarcaHearbreaker.jpg");
+  /* background-attachment: fixed;  scroll | fixed | inherit */
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.coleccionSignos {
+  background-image: url("../img/fondoMarcaSignos.png");
+  /* background-attachment: fixed;  scroll | fixed | inherit */
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.coleccionSignos {
+  background-color: #a98351;
+  height: 300px;
+  width: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: large;
+}
+
+.coleccionHeartbreaker {
+  background-color: white;
+  height: 300px;
+  width: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: large;
+}
+
+.coleccionElementos {
+  background-color: #5ce1e6;
+  height: 300px;
+  width: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: large;
+}
+
+.coleccionFuego {
+  background-color: black;
+  height: 300px;
+  width: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: large;
+}
+
+.coleccionSignos {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.coleccionHeartbreaker {
+  background-position-x: right;
+  color: black;
+}
+
+.coleccionElementos {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.coleccionFuego {
+  background-position-x: right;
+}
+
+.mainCuenta {
+  height: auto;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.mainCuenta .catalogoCuenta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  width: 50vw;
+  -ms-flex-item-align: center;
+      align-self: center;
+  justify-self: center;
+}
+
+.mainCuenta .datosRopa {
+  height: 500px;
+  width: 30vw;
+  position: relative;
+  left: 12rem;
+  border-left: 1px rgba(0, 0, 0, 0.523) solid;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-top: 40px;
+}
+
+.mainCuenta .datosRopa ul li {
+  list-style: none;
+  padding-bottom: 20px;
+}
+
+.mainCuenta .datosRopa h2 {
+  text-align: center;
+}
+
+.descripcionProducto {
+  /* display: none cuando se vea en dispositivos sm agregar mediaquerie */
+  height: 600px;
+  width: auto;
+  margin: 30px 0 0 10px;
+  background: #e9e9e9;
+}
+
+.descripcionProducto h2 {
+  margin-top: 5px;
+  text-align: center;
+  border: 1px rgba(128, 128, 128, 0.671) solid;
+  border-radius: 8px;
+  background-color: rgba(255, 217, 0, 0.726);
+}
+
+.descripcionProducto ul li {
+  list-style: square;
+  text-align: left;
+  padding-bottom: 10px;
+}
+
+.catalogo {
+  margin: 30px 0 0 10px;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
 @media (max-width: 425px) {
   .navegacion {
     display: none;
@@ -344,10 +626,6 @@ body {
     height: 100px;
     width: 100px;
   }
-  .maps iframe {
-    height: 200px;
-    width: 200px;
-  }
   #marca {
     height: auto;
     text-align: center;
@@ -400,111 +678,96 @@ body {
         -ms-grid-row-align: center;
         align-self: center;
   }
-}
-
-.descripcionMarca {
-  margin-top: 20px;
-  height: 200px;
-}
-
-.descripcionMarca h1 {
-  text-align: center;
-}
-
-.coleccionSignos {
-  background-color: black;
-  height: 150px;
-  width: auto;
-  border-radius: 8px;
-  margin-bottom: 10px;
-}
-
-.coleccionHeartbreaker {
-  background-color: rgba(255, 0, 0, 0.877);
-  height: 150px;
-  width: auto;
-  border-radius: 8px;
-  margin-bottom: 10px;
-}
-
-.coleccionElementos {
-  background-color: rgba(123, 203, 250, 0.788);
-  height: 150px;
-  width: auto;
-  border-radius: 8px;
-  margin-bottom: 10px;
-}
-
-.coleccionFuego {
-  background-color: rgba(255, 72, 0, 0.911);
-  height: 150px;
-  width: auto;
-  border-radius: 8px;
-  margin-bottom: 10px;
-}
-
-.mainCuenta {
-  height: 450px;
-  width: 100vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.datosRopa {
-  height: 400px;
-  width: 50vw;
-  position: relative;
-  right: 0px;
-  border-left: 1px rgba(128, 128, 128, 0.623) solid;
-  text-align: left;
-  padding-top: 40px;
-}
-
-.datosRopa ul li {
-  list-style: none;
-  padding-bottom: 20px;
-}
-
-.datosRopa h2 {
-  text-align: center;
-}
-
-.catalogoCuenta {
-  height: auto;
-  width: 50vw;
-}
-
-.mainMarket {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.descripcionProducto {
-  /*display: none cuando se vea en dispositivos sm agregar mediaquerie*/
-  height: auto;
-  width: 20vw;
-  background: #e9e9e9;
-}
-
-.descripcionProducto h2 {
-  margin-top: 5px;
-  text-align: center;
-  border: 1px rgba(128, 128, 128, 0.671) solid;
-  border-radius: 8px;
-  background-color: rgba(255, 217, 0, 0.726);
-}
-
-.descripcionProducto ul li {
-  list-style: square;
-  text-align: left;
-  padding-bottom: 10px;
-}
-
-.catalogo {
-  height: auto;
-  width: 80vw;
-  margin: 30px 0 0 10px;
+  .whatsappIcon {
+    display: block;
+    position: fixed;
+    bottom: 30px;
+    left: 80vw;
+  }
+  .barraBuscadora {
+    display: none;
+  }
+  .barraNormal {
+    display: none;
+  }
+  .barraCelu {
+    display: inline;
+  }
+  .logoMenu {
+    height: 30px;
+    width: 120px;
+  }
+  .parrafoNew {
+    display: none;
+  }
+  .parrafoNew img {
+    display: none;
+  }
+  .maps {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .maps .mapsContacto {
+    margin: auto;
+  }
+  .maps .mapsContacto img {
+    display: none;
+  }
+  .maps iframe {
+    height: 150px;
+    width: auto;
+  }
+  .formulario {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .formulario .tituloMobi {
+    display: inline;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 20px auto;
+    text-align: center;
+  }
+  .formulario .form {
+    display: inline;
+  }
+  .descripcionProducto {
+    display: none;
+  }
+  .mainCuenta {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+  }
+  .mainCuenta .catalogoCuenta {
+    height: auto;
+    width: 90vw;
+  }
+  .mainCuenta .datosRopa {
+    height: 300px;
+    width: 90vw;
+    border: 0;
+    position: relative;
+    left: -10px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 40px;
+  }
 }
 /*# sourceMappingURL=style-sass.css.map */
