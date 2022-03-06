@@ -16,9 +16,9 @@
     border-radius: 8px;
     height: auto;
     width: 400px;
-    box-shadow: -10px 10px 10px grey;
-    background: rgb(192,192,192);
-    background: linear-gradient(0deg, rgba(192,192,192,1) 37%, rgba(128,128,128,1) 100%);
+    box-shadow: -10px 10px 10px rgba(128, 128, 128, 0.5);
+    background: rgba(255, 217, 0, 0.608);
+    /*background: linear-gradient(0deg, rgba(192,192,192,1) 37%, rgba(128,128,128,1) 100%);*/
 }
 .envios{
     @include name;
@@ -31,18 +31,112 @@
         }
     }
 }
-.experiencias{
-    grid-area: exp;
-    text-align: left;
-    margin-top: 40px;
-    h2{
-        text-align: left;
-    }
-}
+
 .mainForo{
     margin: 40px 0 20px 0;
     h1{
         text-align: center;
+    }
+}
+.experiencias{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    h2{
+        text-align: center;
+        display: block;
+    }
+    .expClientes{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 40px 0;
+        .comentarios1{
+            height: 175px;
+            width: 350px;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid rgba(0, 0, 0, 0.5);
+            border-radius: 8px;
+            box-shadow: -10px 10px 10px rgba(128, 128, 128, 0.5);
+            justify-content: space-evenly;
+            .perfil{
+                display: flex;
+                flex-direction: row-reverse;
+                align-items: center;
+                justify-content: space-around;
+                img{
+                    height: 50px;
+                    width: 50px;
+                    border-radius: 50%;
+                    background-color: #dc3545;
+                    align-self: center;
+                }
+            }  
+            
+        }
+        .comentario2{
+            height: 175px;
+            width: 350px;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid rgba(0, 0, 0, 0.5);
+            border-radius: 8px;
+            box-shadow: -10px 10px 10px rgba(128, 128, 128, 0.5);
+            justify-content: space-evenly;
+            .perfil2{
+                display: flex;
+                flex-direction: row-reverse;
+                align-items: center;
+                justify-content: space-around;
+                img{
+                    height: 50px;
+                    width: 50px;
+                    border-radius: 50%;
+                    background-color: #51dc35;
+                    align-self: center;
+                }
+            }
+        }
+        .comentario3{
+            height: 175px;
+            width: 350px;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid rgba(0, 0, 0, 0.5);
+            border-radius: 8px;
+            box-shadow: -10px 10px 10px rgba(128, 128, 128, 0.5);
+            justify-content: space-evenly;
+            .perfil3{
+                display: flex;
+                flex-direction: row-reverse;
+                align-items: center;
+                justify-content: space-around;
+                img{
+                    height: 50px;
+                    width: 50px;
+                    border-radius: 50%;
+                    background-color: #35c3dc;
+                    align-self: center;
+                }
+            }
+        }
+        animation-duration: 5s;
+        animation-name: slidein;
+        animation-iteration-count: infinite;
+        @keyframes slidein {
+            from { 
+                position: relative;
+                left: 80vw;
+            }
+            to { 
+                position: relative;
+                left: 0vw;
+            }
+        }
     }
 }
 

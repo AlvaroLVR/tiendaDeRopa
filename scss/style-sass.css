@@ -288,11 +288,10 @@
   border-radius: 8px;
   height: auto;
   width: 400px;
-  -webkit-box-shadow: -10px 10px 10px grey;
-          box-shadow: -10px 10px 10px grey;
-  background: silver;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(37%, silver), to(gray));
-  background: linear-gradient(0deg, silver 37%, gray 100%);
+  -webkit-box-shadow: -10px 10px 10px rgba(128, 128, 128, 0.5);
+          box-shadow: -10px 10px 10px rgba(128, 128, 128, 0.5);
+  background: rgba(255, 217, 0, 0.608);
+  /*background: linear-gradient(0deg, rgba(192,192,192,1) 37%, rgba(128,128,128,1) 100%);*/
 }
 
 .metodosdepago {
@@ -305,28 +304,14 @@
   border-radius: 8px;
   height: auto;
   width: 400px;
-  -webkit-box-shadow: -10px 10px 10px grey;
-          box-shadow: -10px 10px 10px grey;
-  background: silver;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(37%, silver), to(gray));
-  background: linear-gradient(0deg, silver 37%, gray 100%);
+  -webkit-box-shadow: -10px 10px 10px rgba(128, 128, 128, 0.5);
+          box-shadow: -10px 10px 10px rgba(128, 128, 128, 0.5);
+  background: rgba(255, 217, 0, 0.608);
+  /*background: linear-gradient(0deg, rgba(192,192,192,1) 37%, rgba(128,128,128,1) 100%);*/
 }
 
 .metodosdepago ul li {
   list-style: none;
-}
-
-.experiencias {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: exp;
-  text-align: left;
-  margin-top: 40px;
-}
-
-.experiencias h2 {
-  text-align: left;
 }
 
 .mainForo {
@@ -335,6 +320,199 @@
 
 .mainForo h1 {
   text-align: center;
+}
+
+.experiencias {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 40px;
+}
+
+.experiencias h2 {
+  text-align: center;
+  display: block;
+}
+
+.experiencias .expClientes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 40px 0;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-name: slidein;
+          animation-name: slidein;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.experiencias .expClientes .comentarios1 {
+  height: 175px;
+  width: 350px;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  -webkit-box-shadow: -10px 10px 10px rgba(128, 128, 128, 0.5);
+          box-shadow: -10px 10px 10px rgba(128, 128, 128, 0.5);
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.experiencias .expClientes .comentarios1 .perfil {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.experiencias .expClientes .comentarios1 .perfil img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #dc3545;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.experiencias .expClientes .comentario2 {
+  height: 175px;
+  width: 350px;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  -webkit-box-shadow: -10px 10px 10px rgba(128, 128, 128, 0.5);
+          box-shadow: -10px 10px 10px rgba(128, 128, 128, 0.5);
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.experiencias .expClientes .comentario2 .perfil2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.experiencias .expClientes .comentario2 .perfil2 img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #51dc35;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.experiencias .expClientes .comentario3 {
+  height: 175px;
+  width: 350px;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  -webkit-box-shadow: -10px 10px 10px rgba(128, 128, 128, 0.5);
+          box-shadow: -10px 10px 10px rgba(128, 128, 128, 0.5);
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.experiencias .expClientes .comentario3 .perfil3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.experiencias .expClientes .comentario3 .perfil3 img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #35c3dc;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+@-webkit-keyframes slidein {
+  from {
+    position: relative;
+    left: 80vw;
+  }
+  to {
+    position: relative;
+    left: 0vw;
+  }
+}
+
+@keyframes slidein {
+  from {
+    position: relative;
+    left: 80vw;
+  }
+  to {
+    position: relative;
+    left: 0vw;
+  }
 }
 
 * {
