@@ -151,4 +151,59 @@
             padding-top: 40px;
         }
     } 
+.experiencias{
+    display: relative;
+    .expClientes{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 40px 0;
+        .comentarios1{
+            height: auto;
+            width: 250px;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid rgba(0, 0, 0, 0.5);
+            border-radius: 8px;
+            box-shadow: -10px 10px 10px rgba(128, 128, 128, 0.5);
+            justify-content: space-evenly;
+            .perfil{
+                display: flex;
+                flex-direction: row-reverse;
+                align-items: center;
+                justify-content: space-around;
+                img{
+                    height: 50px;
+                    width: 50px;
+                    border-radius: 50%;
+                    background-color: #dc3545;
+                    align-self: center;
+                }
+            }  
+            
+        }
+        .comentario2{
+            display: none;
+        }
+        .comentario3{
+            display: none;
+        }
+
+        animation-duration: 5s;
+        animation-name: slideinMobile;
+        animation-iteration-count: infinite;
+        @keyframes slideinMobile {
+            from { 
+                position: relative;
+                left: 80vw;
+            }
+            to { 
+                position: relative;
+                left: 0vw;
+            }
+        }
+    }
+}
+    
 }

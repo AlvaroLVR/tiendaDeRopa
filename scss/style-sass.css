@@ -262,6 +262,218 @@
           align-items: center;
 }
 
+* {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0%;
+  padding: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #dddddd;
+  background: -webkit-gradient(linear, left top, right top, from(#dddddd), color-stop(50%, white), to(#dddddd));
+  background: linear-gradient(90deg, #dddddd 0%, white 50%, #dddddd 100%);
+}
+
+.descripcionMarca {
+  margin-top: 20px;
+  height: 200px;
+}
+
+.descripcionMarca h1 {
+  text-align: center;
+}
+
+.coleccionElementos {
+  background-image: url("../img/fondoMarcaElementos.jpg");
+  /* background-attachment: fixed;  scroll | fixed | inherit */
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.coleccionFuego {
+  background-image: url("../img/fondoMarcaFuego.jpg");
+  /* background-attachment: fixed;  scroll | fixed | inherit */
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.coleccionHeartbreaker {
+  background-image: url("../img/fondoMarcaHearbreaker.jpg");
+  /* background-attachment: fixed;  scroll | fixed | inherit */
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.coleccionSignos {
+  background-image: url("../img/fondoMarcaSignos.png");
+  /* background-attachment: fixed;  scroll | fixed | inherit */
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.coleccionSignos {
+  background-color: #a98351;
+  height: 300px;
+  width: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: large;
+}
+
+.coleccionHeartbreaker {
+  background-color: white;
+  height: 300px;
+  width: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: large;
+}
+
+.coleccionElementos {
+  background-color: #5ce1e6;
+  height: 300px;
+  width: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: large;
+}
+
+.coleccionFuego {
+  background-color: black;
+  height: 300px;
+  width: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: large;
+}
+
+.coleccionSignos {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.coleccionHeartbreaker {
+  background-position-x: right;
+  color: black;
+}
+
+.coleccionElementos {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.coleccionFuego {
+  background-position-x: right;
+}
+
+.mainCuenta {
+  height: auto;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.mainCuenta .catalogoCuenta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  width: 50vw;
+  -ms-flex-item-align: center;
+      align-self: center;
+  justify-self: center;
+}
+
+.mainCuenta .datosRopa {
+  height: 500px;
+  width: 30vw;
+  position: relative;
+  left: 12rem;
+  border-left: 1px rgba(0, 0, 0, 0.523) solid;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-top: 40px;
+}
+
+.mainCuenta .datosRopa ul li {
+  list-style: none;
+  padding-bottom: 20px;
+}
+
+.mainCuenta .datosRopa h2 {
+  text-align: center;
+}
+
+.descripcionProducto {
+  /* display: none cuando se vea en dispositivos sm agregar mediaquerie */
+  height: 600px;
+  width: auto;
+  margin: 30px 0 0 10px;
+  background: #e9e9e9;
+}
+
+.descripcionProducto h2 {
+  margin-top: 5px;
+  text-align: center;
+  border: 1px rgba(128, 128, 128, 0.671) solid;
+  border-radius: 8px;
+  background-color: rgba(255, 217, 0, 0.726);
+}
+
+.descripcionProducto ul li {
+  list-style: square;
+  text-align: left;
+  padding-bottom: 10px;
+}
+
+.catalogo {
+  margin: 30px 0 0 10px;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
 #foro {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -515,218 +727,6 @@
   }
 }
 
-* {
-  font-family: 'Montserrat', sans-serif;
-  margin: 0%;
-  padding: 0%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-body {
-  background: #dddddd;
-  background: -webkit-gradient(linear, left top, right top, from(#dddddd), color-stop(50%, white), to(#dddddd));
-  background: linear-gradient(90deg, #dddddd 0%, white 50%, #dddddd 100%);
-}
-
-.descripcionMarca {
-  margin-top: 20px;
-  height: 200px;
-}
-
-.descripcionMarca h1 {
-  text-align: center;
-}
-
-.coleccionElementos {
-  background-image: url("../img/fondoMarcaElementos.jpg");
-  /* background-attachment: fixed;  scroll | fixed | inherit */
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.coleccionFuego {
-  background-image: url("../img/fondoMarcaFuego.jpg");
-  /* background-attachment: fixed;  scroll | fixed | inherit */
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.coleccionHeartbreaker {
-  background-image: url("../img/fondoMarcaHearbreaker.jpg");
-  /* background-attachment: fixed;  scroll | fixed | inherit */
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.coleccionSignos {
-  background-image: url("../img/fondoMarcaSignos.png");
-  /* background-attachment: fixed;  scroll | fixed | inherit */
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.coleccionSignos {
-  background-color: #a98351;
-  height: 300px;
-  width: auto;
-  border-radius: 8px;
-  margin-bottom: 10px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: large;
-}
-
-.coleccionHeartbreaker {
-  background-color: white;
-  height: 300px;
-  width: auto;
-  border-radius: 8px;
-  margin-bottom: 10px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: large;
-}
-
-.coleccionElementos {
-  background-color: #5ce1e6;
-  height: 300px;
-  width: auto;
-  border-radius: 8px;
-  margin-bottom: 10px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: large;
-}
-
-.coleccionFuego {
-  background-color: black;
-  height: 300px;
-  width: auto;
-  border-radius: 8px;
-  margin-bottom: 10px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: large;
-}
-
-.coleccionSignos {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-.coleccionHeartbreaker {
-  background-position-x: right;
-  color: black;
-}
-
-.coleccionElementos {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-.coleccionFuego {
-  background-position-x: right;
-}
-
-.mainCuenta {
-  height: auto;
-  width: 100vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.mainCuenta .catalogoCuenta {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: auto;
-  width: 50vw;
-  -ms-flex-item-align: center;
-      align-self: center;
-  justify-self: center;
-}
-
-.mainCuenta .datosRopa {
-  height: 500px;
-  width: 30vw;
-  position: relative;
-  left: 12rem;
-  border-left: 1px rgba(0, 0, 0, 0.523) solid;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  padding-top: 40px;
-}
-
-.mainCuenta .datosRopa ul li {
-  list-style: none;
-  padding-bottom: 20px;
-}
-
-.mainCuenta .datosRopa h2 {
-  text-align: center;
-}
-
-.descripcionProducto {
-  /* display: none cuando se vea en dispositivos sm agregar mediaquerie */
-  height: 600px;
-  width: auto;
-  margin: 30px 0 0 10px;
-  background: #e9e9e9;
-}
-
-.descripcionProducto h2 {
-  margin-top: 5px;
-  text-align: center;
-  border: 1px rgba(128, 128, 128, 0.671) solid;
-  border-radius: 8px;
-  background-color: rgba(255, 217, 0, 0.726);
-}
-
-.descripcionProducto ul li {
-  list-style: square;
-  text-align: left;
-  padding-bottom: 10px;
-}
-
-.catalogo {
-  margin: 30px 0 0 10px;
-  height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-}
-
 @media (max-width: 425px) {
   .navegacion {
     display: none;
@@ -946,6 +946,96 @@ body {
         -ms-flex-align: center;
             align-items: center;
     padding-top: 40px;
+  }
+  .experiencias {
+    display: relative;
+  }
+  .experiencias .expClientes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    margin: 40px 0;
+    -webkit-animation-duration: 5s;
+            animation-duration: 5s;
+    -webkit-animation-name: slideinMobile;
+            animation-name: slideinMobile;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+  }
+  .experiencias .expClientes .comentarios1 {
+    height: auto;
+    width: 250px;
+    padding: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    -webkit-box-shadow: -10px 10px 10px rgba(128, 128, 128, 0.5);
+            box-shadow: -10px 10px 10px rgba(128, 128, 128, 0.5);
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .experiencias .expClientes .comentarios1 .perfil {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .experiencias .expClientes .comentarios1 .perfil img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #dc3545;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .experiencias .expClientes .comentario2 {
+    display: none;
+  }
+  .experiencias .expClientes .comentario3 {
+    display: none;
+  }
+  @-webkit-keyframes slideinMobile {
+    from {
+      position: relative;
+      left: 80vw;
+    }
+    to {
+      position: relative;
+      left: 0vw;
+    }
+  }
+  @keyframes slideinMobile {
+    from {
+      position: relative;
+      left: 80vw;
+    }
+    to {
+      position: relative;
+      left: 0vw;
+    }
   }
 }
 /*# sourceMappingURL=style-sass.css.map */
